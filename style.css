@@ -71,6 +71,7 @@ section {
     margin-right: 0; /* Add this line */
     width: 100%; /* Add this line */
     max-width: none;
+    box-sizing: border-box; /* Include padding and borders in width */
     display: none; /* Initially hide all sections */
 }
 
