@@ -10,7 +10,6 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
-    padding: 80px; /* Add padding to the body */
 }
 
 header {
@@ -18,10 +17,6 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    /*box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);*/
-    z-index: 100; /* To make the header appear above other content */
 } 
 
 
