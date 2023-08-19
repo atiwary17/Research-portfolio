@@ -32,6 +32,12 @@ nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s; /* Adding smooth transition for color change */
+}
+
+/* Change link color on hover */
+nav a:hover {
+    color: #007BFF; /* Light blue color */
 }
 
 main {
@@ -55,6 +61,19 @@ h2 {
 
 /* ... Your existing CSS rules ... */
 
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #007BFF; /* Light blue color */
+    margin: 0 10px;
+    font-size: 24px;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -62,11 +81,11 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 /* ... Additional styles ... */
-
 
 @media screen and (max-width: 768px) {
     main {
