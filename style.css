@@ -82,6 +82,7 @@ h2 {
 /* ... Your existing CSS rules ... */
 
 /* Style for the CV section */
+/* Style for the CV section */
 #cv {
     display: none;
     margin-bottom: 40px;
@@ -89,6 +90,8 @@ h2 {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Default width for all screen sizes */
+    margin-left: 0; /* Remove any left margin */
 }
 
 #cv h2 {
@@ -105,6 +108,7 @@ h2 {
     height: 100vh; /* Adjust height based on your preference */
     border: none;
 }
+
 
 /* ... Your existing CSS rules ... */
 
