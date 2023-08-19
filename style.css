@@ -31,23 +31,33 @@ header p {
     line-height: 1.5;
 }
 
+/* Update navigation styles */
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 0; /* Remove the previous margin-top value */
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0; /* Reset the previous margin values */
+    padding: 10px 0; /* Add padding for better spacing between items */
 }
 
 nav a {
+    display: block; /* Make the link a block element for full clickable area */
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    transition: color 0.3s; /* Adding smooth transition for color change */
+    transition: color 0.3s;
+    padding: 5px 15px; /* Add padding for better clickable area */
 }
+
+/* Change link color on hover */
+nav a:hover {
+    color: #007BFF;
+}
+
+/* ... Your existing CSS styles ... */
 
 /* Change link color on hover */
 nav a:hover {
