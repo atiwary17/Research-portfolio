@@ -196,43 +196,43 @@ section {
 /* Adjust width and alignment for different screen sizes */
 @media screen and (max-width: 980px) {
     section {
-        width: 90%; /* Adjusted width for medium screens */
-        margin-left: 5%; /* Center content by adding a small left margin */
+        width: 100%; /* Adjusted width for medium screens */
+        margin-left: 0%; /* Center content by adding a small left margin */
     }
 }
 
 @media screen and (max-width: 768px) {
     section {
-        width: 75%; /* Adjusted width for smaller screens */
-        margin-left: 12.5%; /* Center content by adding a larger left margin */
+        width: 90%; /* Adjusted width for smaller screens */
+        margin-left: 5%; /* Center content by adding a larger left margin */
     }
 }
 
 @media screen and (max-width: 576px) {
     section {
-        width: 60%; /* Adjusted width for extra small screens */
-        margin-left: 20%; /* Center content by adding a larger left margin */
+        width: 70%; /* Adjusted width for extra small screens */
+        margin-left: 12.5%; /* Center content by adding a larger left margin */
     }
 }
 
 /* Optional: Adjust width and alignment for larger screens */
 @media screen and (min-width: 981px) {
     section {
-        width: 100%; /* Reset width for larger screens */
-        margin-left: 0; /* Remove left margin for full width */
+        width: 110%; /* Reset width for larger screens */
+        margin-left: -5%; /* Remove left margin for full width */
     }
 }
 
 @media screen and (min-width: 1200px) {
     section {
-        width: 120%; /* Adjusted width for larger screens */
-        margin-left: -10%; /* Adjust left margin for larger screens */
+        width: 125%; /* Adjusted width for larger screens */
+        margin-left: -15%; /* Adjust left margin for larger screens */
     }
 }
 
 @media screen and (min-width: 1440px) {
     section {
-        width: 140%; /* Adjusted width for even larger screens */
-        margin-left: -20%; /* Adjust left margin for even larger screens */
+        width: 150%; /* Adjusted width for even larger screens */
+        margin-left: -25%; /* Adjust left margin for even larger screens */
     }
 }
