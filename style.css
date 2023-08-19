@@ -181,8 +181,52 @@ footer {
 
 
 /* Add a media query for larger screens to increase section width */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     section {
         max-width: 900px;
     }
+}*/
+
+/* Mobile-first approach */
+body {
+    width: 100%; /* Default width for all screen sizes */
 }
+
+/* Adjust width for different screen sizes */
+@media screen and (max-width: 980px) {
+    body {
+        width: 90%; /* Adjusted width for medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 75%; /* Adjusted width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 60%; /* Adjusted width for extra small screens */
+    }
+}
+
+/* Optional: Adjust width for larger screens */
+@media screen and (min-width: 981px) {
+    body {
+        width: 100%; /* Reset width for larger screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 120%; /* Adjusted width for larger screens */
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 140%; /* Adjusted width for even larger screens */
+    }
+}
+
