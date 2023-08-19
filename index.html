@@ -27,35 +27,24 @@
             <h2>Homepage</h2>
             <p>Welcome to my research portfolio website. Here, you'll find information about my research, publications, presentations, and more.</p>
         </section>
-        <section id="about">
+        <section id="about" class="hidden">
             <h2>About</h2>
             <!-- Add detailed information about yourself here -->
         </section>
-        <section id="publications">
+        <section id="publications" class="hidden">
             <h2>Publications</h2>
             <!-- Add a list of your publications here -->
         </section>
-        <section id="presentations">
+        <section id="presentations" class="hidden">
             <h2>Presentations</h2>
             <!-- Add a list of your presentations here -->
         </section>
-        <section id="awards">
-            <h2>Awards and Honors</h2>
-            <!-- Add a list of your awards and honors here -->
-        </section>
-        <section id="research-experience">
-            <h2>Research Experience</h2>
-            <!-- Add a list of your research experience here -->
-        </section>
-        <section id="skills">
-            <h2>Skills and Abilities</h2>
-            <!-- Add a list of your skills and abilities here -->
-        </section>
-        <section id="cv">
+        <!-- Add other sections here -->
+        <section id="cv" class="hidden">
             <h2>Curriculum Vitae</h2>
             <iframe id="cvFrame" src="cv/Aakanksha_CV_short.pdf" width="100%" height="800px"></iframe>
         </section>
-        <section id="contact">
+        <section id="contact" class="hidden">
             <h2>Contact</h2>
             <p>Email: your.email@example.com</p>
             <p>Phone: +1 123-456-7890</p>
@@ -64,5 +53,23 @@
     <footer>
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const target = this.getAttribute('href');
+                sections.forEach(section => {
+                    if (section.id === target.substr(1)) {
+                        section.classList.toggle('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
