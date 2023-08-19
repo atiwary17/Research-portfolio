@@ -52,8 +52,12 @@
         
         <section id="publications">
             <h2>Publications</h2>
-            <div class="section-content"></div>
+            <div class="section-content">
+            <!-- Include the content from publications.html -->
+                <div id="publicationsContent"></div>
+            </div>
         </section>
+
         
         <section id="presentations">
             <h2>Presentations</h2>
@@ -157,7 +161,7 @@
     }
 
     function loadPublicationsContent() {
-        const publicationsSection = document.getElementById('publications');
+        const publicationsSection = document.getElementById('publicationsContent');
         const xhr = new XMLHttpRequest();
         xhr.open('GET', 'publications.html', true);
         xhr.onreadystatechange = function () {
@@ -167,7 +171,11 @@
         };
         xhr.send();
     }
+
+    // Call the function to load the initial section content
+    loadSectionContent(sections[0]); // Load the content of the first section by default
 </script>
+
 
 </body>
 </html>
