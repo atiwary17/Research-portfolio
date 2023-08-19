@@ -6,37 +6,63 @@
 </head>
 <body>
     <header>
-        <h1>Your Name - Research Portfolio</h1>
+        <h1>Your Name</h1>
+        <p>PhD Candidate in XYZ Department</p>
         <nav>
             <ul>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#" id="cvLink">See My CV</a></li>
+                <li><a href="#homepage">Homepage</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#presentations">Presentations</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#research-experience">Research Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="research">
-            <h2>Research Work</h2>
-            <!-- Add your research content here -->
-            <p>This is where you can describe your research projects, findings, and contributions.</p>
+        <section id="homepage">
+            <h2>Homepage</h2>
+            <p>Welcome to my research portfolio website. Here, you'll find information about my research, publications, presentations, and more.</p>
         </section>
-        <section id="cvSection" style="display:none;">
-            <h2>Academic CV</h2>
-            <iframe id="cvFrame" width="100%" height="600px"></iframe>
+        <section id="about">
+            <h2>About</h2>
+            <!-- Add detailed information about yourself here -->
+        </section>
+        <section id="publications">
+            <h2>Publications</h2>
+            <!-- Add a list of your publications here -->
+        </section>
+        <section id="presentations">
+            <h2>Presentations</h2>
+            <!-- Add a list of your presentations here -->
+        </section>
+        <section id="awards">
+            <h2>Awards and Honors</h2>
+            <!-- Add a list of your awards and honors here -->
+        </section>
+        <section id="research-experience">
+            <h2>Research Experience</h2>
+            <!-- Add a list of your research experience here -->
+        </section>
+        <section id="skills">
+            <h2>Skills and Abilities</h2>
+            <!-- Add a list of your skills and abilities here -->
+        </section>
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <iframe id="cvFrame" src="cv/Aakanksha_CV_short.pdf" width="100%" height="800px"></iframe>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +1 123-456-7890</p>
         </section>
     </main>
     <footer>
-        <p>Contact: your.email@example.com</p>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
-    <script>
-        const cvLink = document.getElementById('cvLink');
-        const cvSection = document.getElementById('cvSection');
-        const cvFrame = document.getElementById('cvFrame');
-
-        cvLink.addEventListener('click', () => {
-            cvSection.style.display = 'block';
-            cvFrame.src = 'cv/Aakanksha_CV_short.pdf';
-        });
-    </script>
 </body>
 </html>
