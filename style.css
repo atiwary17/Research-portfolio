@@ -134,6 +134,15 @@ footer {
 }
 
 /* ... Additional styles ... */
+/* ... Your existing CSS rules ... */
+
+/* Initially display the homepage section */
+#homepage {
+    display: block;
+}
+
+/* ... Additional styles ... */
+
 
 @media screen and (max-width: 768px) {
     main {
