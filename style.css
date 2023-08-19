@@ -31,31 +31,58 @@ header p {
     line-height: 1.5;
 }
 
-/* Update navigation styles */
+/* Updated navigation styles */
 nav ul {
     list-style: none;
     padding: 20px;
-    margin-top: 0; /* Remove the previous margin-top value */
+    margin: 0; /* Reset margin to remove any spacing */
 }
 
 nav li {
-    margin: 0; /* Reset the previous margin values */
-    padding: 10px 0; /* Add padding for better spacing between items */
+    margin-bottom: 10px; /* Add margin bottom for spacing between items */
 }
 
 nav a {
-    display: block; /* Make the link a block element for full clickable area */
+    display: block;
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
-    padding: 5px 15px; /* Add padding for better clickable area */
+    padding: 5px 0; /* Adjust padding for clickable area */
 }
 
 /* Change link color on hover */
 nav a:hover {
     color: #007BFF;
 }
+
+/* ... Your existing CSS styles ... */
+
+/* Content section container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+}
+
+/* Left navigation container */
+.nav-container {
+    /* ... Your existing .nav-container styles ... */
+}
+
+/* Right content container */
+.content {
+    flex: 1; /* Fill available space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Add scroll to content if needed */
+}
+
 
 /* ... Your existing CSS styles ... */
 
