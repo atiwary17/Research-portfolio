@@ -70,6 +70,34 @@ h2 {
     color: #333;
     margin-bottom: 10px;
 }
+/* ... Your existing CSS rules ... */
+
+/* Style for the CV section */
+#cv {
+    display: none;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cv h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#cvFrame {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    height: 100vh; /* Adjust height based on your preference */
+    border: none;
+}
+
+/* ... Your existing CSS rules ... */
 
 /* ... Your existing CSS rules ... */
 
