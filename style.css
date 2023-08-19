@@ -194,6 +194,34 @@ footer {
 
 
 /* ... Additional styles ... */
+/* Styling the scrollbar */
+.nav-container {
+    /* ... Your existing .nav-container styles ... */
+    
+    /* Width and color of the scrollbar track */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ccc #f5f5f5; /* For Firefox */
+}
+
+/* Styling the thumb of the scrollbar */
+.nav-container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.nav-container::-webkit-scrollbar-track {
+    background-color: #f5f5f5; /* Background color of the scrollbar track */
+}
+
+.nav-container::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Change thumb color on hover */
+.nav-container::-webkit-scrollbar-thumb:hover {
+    background-color: #999; /* Darker color on hover */
+}
+
 /* ... Your existing CSS rules ... */
 
 /* Initially display the homepage section */
