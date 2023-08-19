@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -42,15 +42,15 @@ main {
 
 section {
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #007BFF;
     margin-bottom: 10px;
-}
-
-iframe {
-    border: none;
 }
 
 footer {
@@ -61,14 +61,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav li {
-        margin: 5px 0;
-    }
 }
