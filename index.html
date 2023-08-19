@@ -10,7 +10,7 @@
         <nav>
             <ul>
                 <li><a href="#research">Research</a></li>
-                <li><a href="#cv">Academic CV</a></li>
+                <li><a href="#" id="cvLink">See My CV</a></li>
             </ul>
         </nav>
     </header>
@@ -20,13 +20,23 @@
             <!-- Add your research content here -->
             <p>This is where you can describe your research projects, findings, and contributions.</p>
         </section>
-        <section id="cv">
+        <section id="cvSection" style="display:none;">
             <h2>Academic CV</h2>
-            <iframe src="cv/Aakanksha_CV_short.pdf" width="100%" height="600px"></iframe>
+            <iframe id="cvFrame" width="100%" height="600px"></iframe>
         </section>
     </main>
     <footer>
         <p>Contact: your.email@example.com</p>
     </footer>
+    <script>
+        const cvLink = document.getElementById('cvLink');
+        const cvSection = document.getElementById('cvSection');
+        const cvFrame = document.getElementById('cvFrame');
+
+        cvLink.addEventListener('click', () => {
+            cvSection.style.display = 'block';
+            cvFrame.src = 'cv/your-cv.pdf'; // Replace with the correct path to your CV
+        });
+    </script>
 </body>
 </html>
