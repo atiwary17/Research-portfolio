@@ -112,12 +112,18 @@ h2 {
 
 /* ... Your existing CSS rules ... */
 
-/* ... Your existing CSS rules ... */
-
 /* Contact Form Styles */
+#contact {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 60px; /* Create space above the footer */
+}
+
 #contact form {
     max-width: 400px;
     margin: 0 auto;
+    padding-bottom: 80px; /* Adjust padding to prevent overlap with button */
 }
 
 #contact label {
@@ -136,7 +142,8 @@ h2 {
 
 #contact button {
     display: block;
-    margin-top: 10px;
+    margin-top: 20px; /* Increase margin to separate button from form fields */
+    margin-bottom: 20px; /* Add margin at the bottom of button */
     padding: 10px;
     background-color: #007BFF;
     color: white;
@@ -173,6 +180,7 @@ footer {
     left: 0;
     right: 0;
 }
+
 
 /* ... Additional styles ... */
 /* ... Your existing CSS rules ... */
