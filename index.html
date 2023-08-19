@@ -8,6 +8,8 @@
     <header>
         <h1>Your Name</h1>
         <p>PhD Candidate in XYZ Department</p>
+    </header>
+    <div class="nav-container">
         <nav>
             <ul>
                 <li><a href="#homepage">Homepage</a></li>
@@ -21,48 +23,43 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+        <div class="vertical-bar"></div>
+    </div>
     <main>
         <section id="homepage">
             <h2>Homepage</h2>
             <p>Welcome to my research portfolio website. Here, you'll find information about my research, publications, presentations, and more.</p>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <!-- Add detailed information about yourself here -->
-        </section>
-        <section id="publications">
-            <h2>Publications</h2>
-            <!-- Add a list of your publications here -->
-        </section>
-        <section id="presentations">
-            <h2>Presentations</h2>
-            <!-- Add a list of your presentations here -->
-        </section>
-        <section id="awards">
-            <h2>Awards and Honors</h2>
-            <!-- Add a list of your awards and honors here -->
-        </section>
-        <section id="research-experience">
-            <h2>Research Experience</h2>
-            <!-- Add a list of your research experience here -->
-        </section>
-        <section id="skills">
-            <h2>Skills and Abilities</h2>
-            <!-- Add a list of your skills and abilities here -->
-        </section>
-        <section id="cv">
-            <h2>Curriculum Vitae</h2>
-            <iframe id="cvFrame" src="cv/Aakanksha_CV_short.pdf" width="100%" height="800px"></iframe>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: +1 123-456-7890</p>
-        </section>
+        <!-- Add other sections here -->
     </main>
     <footer>
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </footer>
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const target = this.getAttribute('href');
+                sections.forEach(section => {
+                    if ('#' + section.id === target) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                updateActiveLink(this);
+            });
+        });
+
+        function updateActiveLink(activeLink) {
+            const bar = document.querySelector('.vertical-bar');
+            navLinks.forEach(link => link.classList.remove('active'));
+            activeLink.classList.add('active');
+            bar.style.top = activeLink.offsetTop + 'px';
+        }
+    </script>
 </body>
 </html>
