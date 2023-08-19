@@ -17,6 +17,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: fixed;
     z-index: 100; /* To make the header appear above other content */
 } 
 
