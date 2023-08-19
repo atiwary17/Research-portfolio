@@ -47,6 +47,7 @@ main {
 }
 
 section {
+    display: none;
     margin-bottom: 40px;
     padding: 20px;
     background-color: white;
@@ -61,6 +62,43 @@ h2 {
 
 /* ... Your existing CSS rules ... */
 
+
+/* Contact Form Styles */
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Icons */
 .contact-icons {
     display: flex;
     justify-content: center;
