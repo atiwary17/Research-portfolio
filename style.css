@@ -193,6 +193,46 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+/*Additional styles*/
+#skills {
+    /* Your existing styles for section */
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.skill-card:hover {
+    background-color: #f7f7f7;
+    transform: translateY(-5px);
+}
+
+.skill-card i {
+    font-size: 36px;
+    color: #007bff; /* Choose a color that fits your design */
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #555;
+}
 
 /* ... Your existing CSS rules ... */
 
