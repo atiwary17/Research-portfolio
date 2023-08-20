@@ -62,6 +62,8 @@
         <section id="presentations">
             <h2>Presentations</h2>
             <div class="section-content"></div>
+            <div id="presentations"></div>
+            </div>
         </section>
         
         <section id="awards">
@@ -72,6 +74,9 @@
         <section id="research-experience">
             <h2>Research Experience</h2>
             <div class="section-content"></div>
+            <!-- Include the content from research-experience.html -->
+                <div id="research-experienceContent"></div>
+            </div>
         </section>
         
         <section id="skills">
@@ -190,6 +195,21 @@
 
 // Call the function to load research experience content
 loadResearchExperienceContent();
+
+    function loadPresentationsContent() {
+        const presentationsSection = document.getElementById('presentations');
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'presentations.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                presentationsSection.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    }
+
+    // Call the function to load presentations content
+    loadPresentationsContent();
 
 </script>
 
