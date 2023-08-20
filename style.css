@@ -352,6 +352,50 @@ footer {
 
 
 /* Add any other styles you need */
+/* Awards Section */
+.awards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.award-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.award-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.award-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.read-more-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.read-more-link:hover {
+    background-color: #0056b3;
+}
 
 /* Add any additional styles you want */
 
