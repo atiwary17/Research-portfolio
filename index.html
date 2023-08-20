@@ -121,7 +121,10 @@
         </div>
         <p>&copy; 2023 Aakanksha Tiwary. All rights reserved.</p>
     </footer>
-    <script>
+
+
+    
+   <script>
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('section');
     const sectionContents = document.querySelectorAll('.section-content');
@@ -157,8 +160,13 @@
             .then(data => {
                 contentContainer.innerHTML = data;
                 if (sectionId === 'publications') {
-                    loadPublicationsContent(); // Load publications content for the Publications section
+                    loadPublicationsContent();
+                } else if (sectionId === 'research-experience') {
+                    loadResearchExperienceContent();
+                } else if (sectionId === 'presentations') {
+                    loadPresentationsContent();
                 }
+                // Add similar conditions for other sections
             })
             .catch(error => {
                 console.error('Error loading section content:', error);
@@ -177,24 +185,17 @@
         xhr.send();
     }
 
-    // Call the function to load the initial section content
-    loadSectionContent(sections[0]); // Load the content of the first section by default
-
-
     function loadResearchExperienceContent() {
-    const researchExperienceSection = document.getElementById('research-experienceContent');
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'research-experience.html', true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            researchExperienceSection.innerHTML = xhr.responseText;
-        }
-    };
-    xhr.send();
-}
-
-// Call the function to load research experience content
-loadResearchExperienceContent();
+        const researchExperienceSection = document.getElementById('research-experienceContent');
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'research-experience.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                researchExperienceSection.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    }
 
     function loadPresentationsContent() {
         const presentationsSection = document.getElementById('presentations');
@@ -208,11 +209,9 @@ loadResearchExperienceContent();
         xhr.send();
     }
 
-    // Call the function to load presentations content
-    loadPresentationsContent();
-
+    // Call the function to load the initial section content
+    loadSectionContent(sections[0]); // Load the content of the first section by default
 </script>
-
 
 </body>
 </html>
