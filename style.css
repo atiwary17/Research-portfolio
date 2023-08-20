@@ -508,11 +508,11 @@ footer {
 
 
 /* Add a media query for larger screens to increase section width */
-/* @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     section {
         max-width: 900px;
     }
-}*/
+}
 /* Mobile-first approach */
 section {
     width: 100%; /* Default width for all screen sizes */
@@ -540,25 +540,25 @@ section {
         margin-left: 12.5%; 
     }
 }
-*/
-/* Optional: Adjust width and alignment for larger screens */
+
+
 @media screen and (min-width: 981px) {
     section {
-        width: 110%; /* Reset width for larger screens */
-        margin-left: -5%; /* Remove left margin for full width */
+        width: 110%; 
+        margin-left: -5%; 
     }
 }
 
 @media screen and (min-width: 1200px) {
     section {
-        width: 125%; /* Adjusted width for larger screens */
-        margin-left: -15%; /* Adjust left margin for larger screens */
+        width: 125%; 
+        margin-left: -15%; 
     }
 }
 
 @media screen and (min-width: 1440px) {
     section {
-        width: 150%; /* Adjusted width for even larger screens */
-        margin-left: -25%; /* Adjust left margin for even larger screens */
+        width: 150%; 
+        margin-left: -25%; 
     }
-}
+} */
