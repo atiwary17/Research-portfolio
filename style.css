@@ -191,8 +191,11 @@ footer {
 }
 
 .publications-container {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
+    gap: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill columns */
     gap: 20px;
 }
 
@@ -241,8 +244,11 @@ footer {
 }
 
 .presentations-container {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
+    gap: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill columns */
     gap: 20px;
 }
 
@@ -303,8 +309,11 @@ footer {
 }
 
 .research-experience-container {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
+    gap: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill columns */
     gap: 20px;
 }
 
@@ -354,8 +363,11 @@ footer {
 /* Add any other styles you need */
 /* Awards Section */
 .awards-container {
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
+    gap: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill columns */
     gap: 20px;
 }
 
