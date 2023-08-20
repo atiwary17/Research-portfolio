@@ -563,3 +563,16 @@ footer {
         margin-left: -25%; 
     }
 } */
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap; /* Allow navigation items to wrap */
+        justify-content: flex-start; /* Align items to the left */
+        padding: 10px 0; /* Add some spacing for better readability */
+    }
+
+    nav li {
+        margin: 5px 15px; /* Adjust spacing */
+    }
+}
