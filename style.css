@@ -95,6 +95,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%; /* Default width for all screen sizes */
     margin-left: 0; /* Remove any left margin */
+    padding-bottom: 80px; /* Add padding at the bottom to prevent overlap with footer */
 }
 
 #cv h2 {
