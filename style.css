@@ -243,6 +243,7 @@ footer {
 /* Presentations Section */
 #presentations {
     /* Other styles for the section */
+    padding-bottom: 80px; /* Adjust padding to prevent overlap with footer */
 }
 
 .presentations-container {
@@ -308,6 +309,7 @@ footer {
 /* Research Experience Section */
 #research-experience {
     /* Other styles for the section */
+    padding-bottom: 80px; /* Adjust padding to prevent overlap with footer */
 }
 
 .research-experience-container {
@@ -364,6 +366,11 @@ footer {
 
 /* Add any other styles you need */
 /* Awards Section */
+/*Additional styles*/
+#awards {
+    /* Your existing styles for section */
+    padding-bottom: 80px; /* Adjust padding to prevent overlap with footer */
+}
 .awards-container {
     /*display: flex;
     flex-wrap: wrap;
@@ -416,6 +423,7 @@ footer {
 /*Additional styles*/
 #skills {
     /* Your existing styles for section */
+    padding-bottom: 80px; /* Adjust padding to prevent overlap with footer */
 }
 
 .skills-container {
