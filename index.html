@@ -124,7 +124,7 @@
 
 
     
-   <script>
+<script>
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('section');
     const sectionContents = document.querySelectorAll('.section-content');
@@ -161,10 +161,13 @@
                 contentContainer.innerHTML = data;
                 if (sectionId === 'publications') {
                     loadPublicationsContent();
+                    attachPublicationDescriptionHandlers(); // Attach handlers for publications
                 } else if (sectionId === 'research-experience') {
                     loadResearchExperienceContent();
+                    attachResearchDescriptionHandlers(); // Attach handlers for research experience
                 } else if (sectionId === 'presentations') {
                     loadPresentationsContent();
+                    attachPresentationDescriptionHandlers(); // Attach handlers for presentations
                 }
                 // Add similar conditions for other sections
             })
@@ -209,9 +212,42 @@
         xhr.send();
     }
 
+    // Attach handlers for read more/less links in publications
+    function attachPublicationDescriptionHandlers() {
+        // Your existing script for handling read more/less links in publications
+    }
+
+    // Attach handlers for read more/less links in research experience
+    function attachResearchDescriptionHandlers() {
+        // Your existing script for handling read more/less links in research experience
+    }
+
+    // Attach handlers for read more/less links in presentations
+    function attachPresentationDescriptionHandlers() {
+        const readMoreLinks = document.querySelectorAll('.read-more-link');
+        const readLessLinks = document.querySelectorAll('.read-less-link');
+        const descriptionContainers = document.querySelectorAll('.presentation-description');
+        const fullDescriptionContainers = document.querySelectorAll('.full-description');
+
+        readMoreLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+                descriptionContainers[index].style.display = 'none';
+                fullDescriptionContainers[index].style.display = 'block';
+            });
+        });
+
+        readLessLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+                descriptionContainers[index].style.display = 'block';
+                fullDescriptionContainers[index].style.display = 'none';
+            });
+        });
+    }
+
     // Call the function to load the initial section content
     loadSectionContent(sections[0]); // Load the content of the first section by default
 </script>
+
 
 </body>
 </html>
