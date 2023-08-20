@@ -514,10 +514,10 @@ footer {
     }
 }
 /* Mobile-first approach */
-section {
-    width: 100%; /* Default width for all screen sizes */
-    margin-left: 0; /* Remove any left margin */
-}
+/*section {
+    width: 100%; 
+    margin-left: 0; 
+}*/
 
 /* Adjust width and alignment for different screen sizes */
 /* @media screen and (max-width: 980px) {
