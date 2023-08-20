@@ -189,6 +189,7 @@ footer {
 /* Publications Section */
 #publications {
     /* Other styles for the section */
+    padding-bottom: 80px; /* Adjust padding to prevent overlap with footer */
 }
 
 .publications-container {
