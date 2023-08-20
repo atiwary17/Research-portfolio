@@ -123,8 +123,7 @@
     </footer>
 
 
-    
-<script>
+    <script>
     const navLinks = document.querySelectorAll('nav a');
     const sections = document.querySelectorAll('section');
     const sectionContents = document.querySelectorAll('.section-content');
@@ -219,7 +218,24 @@
 
     // Attach handlers for read more/less links in research experience
     function attachResearchDescriptionHandlers() {
-        // Your existing script for handling read more/less links in research experience
+        const readMoreLinks = document.querySelectorAll('.read-more-link');
+        const readLessLinks = document.querySelectorAll('.read-less-link');
+        const summaries = document.querySelectorAll('.research-summary');
+        const fullDescriptions = document.querySelectorAll('.full-description');
+
+        readMoreLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+                summaries[index].style.display = 'none';
+                fullDescriptions[index].style.display = 'block';
+            });
+        });
+
+        readLessLinks.forEach((link, index) => {
+            link.addEventListener('click', () => {
+                summaries[index].style.display = 'block';
+                fullDescriptions[index].style.display = 'none';
+            });
+        });
     }
 
     // Attach handlers for read more/less links in presentations
@@ -247,6 +263,7 @@
     // Call the function to load the initial section content
     loadSectionContent(sections[0]); // Load the content of the first section by default
 </script>
+
 
 
 </body>
