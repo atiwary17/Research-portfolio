@@ -488,6 +488,9 @@ footer {
     background-color: #ebebeb;
     transform: translateY(-5px);
 }
+.homepage-content {
+            flex: 1;
+        }
 
 .homepage-title {
     font-size: 36px;
