@@ -514,7 +514,12 @@ footer {
 .homepage-link:hover {
     background-color: #0056b3;
 }
-
+.homepage-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: Adds a rounded border to the image */
+            margin-right: 20px; /* Adjust the margin as needed */
+        }
 /* ... Additional styles ... */
 
 
