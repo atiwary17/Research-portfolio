@@ -473,6 +473,12 @@ footer {
 #homepage {
     display: block;
     /* Other styles for the section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to fill the viewport height */
+    overflow: auto; /* Allow vertical scrolling if content exceeds the viewport height */
+}
 }
 
 .homepage-container {
@@ -482,6 +488,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: background-color 0.3s, transform 0.3s;
+    
 }
 
 .homepage-container:hover {
